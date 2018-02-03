@@ -1,3 +1,1 @@
-# XMLPool
-# XMLPool
-# XMLPool
+XML stuff reminder
