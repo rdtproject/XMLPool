@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Client"
+	xmlns:tns="http://www.example.org/Client" elementFormDefault="qualified">
+
+	<element name="client" type="tns:Client" />
+
+	<complexType name="Client">
+		<sequence>
+			<element name="clientType" type="tns:ClientType" />
+			<element name="firstName" type="string" />
+			<element name="lastName" type="string"></element>
+		</sequence>
+	</complexType>
+
+	<simpleType name="ClientType">
+		<restriction base="string">
+			<enumeration value="PERSON" />
+			<enumeration value="COMPANY" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="Age">
+		<restriction base="int">
+			<pattern value="[0-9]*"></pattern>
+		</restriction>
+	</simpleType>
+
+</schema>
