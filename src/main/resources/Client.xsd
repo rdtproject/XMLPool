@@ -9,6 +9,7 @@
 			<element name="clientType" type="tns:ClientType" />
 			<element name="firstName" type="string" />
 			<element name="lastName" type="string"></element>
+			<element name="age" type="tns:Age" />
 		</sequence>
 	</complexType>
 
