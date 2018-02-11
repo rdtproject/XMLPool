@@ -22,7 +22,7 @@
 
 	<simpleType name="Age">
 		<restriction base="int">
-			<pattern value="[0-9]*"></pattern>
+			<pattern value="[0-9]*" />
 		</restriction>
 	</simpleType>
 
