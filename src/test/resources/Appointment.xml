@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:appointment xmlns:tns="http://www.example.org/Client"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/Client Appointment.xsd ">
+	<tns:date>2001-01-01</tns:date>
+	<tns:appartment>
+		<tns:address>
+			<tns:streetName>Ugly street</tns:streetName>
+			<tns:streetNr>2</tns:streetNr>
+			<tns:zipCode>3013</tns:zipCode>
+		</tns:address>
+		<tns:floor>2</tns:floor>
+		<tns:freeFrom>2001-01-01</tns:freeFrom>
+		<tns:monthlyCosts>1430.22</tns:monthlyCosts>
+	</tns:appartment>
+	<tns:teenant>
+		<tns:firstName>Zdzislaw</tns:firstName>
+		<tns:lastName>Kowalski</tns:lastName>
+		<tns:age>34</tns:age>
+		<tns:salary>6300.0</tns:salary>
+	</tns:teenant>
+</tns:appointment>

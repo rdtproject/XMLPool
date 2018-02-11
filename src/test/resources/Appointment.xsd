@@ -2,20 +2,13 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Client"
 	xmlns:tns="http://www.example.org/Client" elementFormDefault="qualified">
 
+	<element name="appointment" type="tns:Appointment" />
+
 	<complexType name="Appointment">
 		<sequence>
-			<element name="date" type="date"></element>
+			<element name="date" type="date" />
 			<element name="appartment" type="tns:Appartment" />
-			<element name="teenant" type="tns:Teenant"></element>
-		</sequence>
-	</complexType>
-
-	<complexType name="Teenant">
-		<sequence>
-			<element name="firstName" type="string" />
-			<element name="lastName" type="string" />
-			<element name="age" type="int" />
-			<element name="salary" type="float" />
+			<element name="teenant" type="tns:Teenant" />
 		</sequence>
 	</complexType>
 
@@ -28,27 +21,22 @@
 		</sequence>
 	</complexType>
 
+	<complexType name="Teenant">
+		<sequence>
+			<element name="firstName" type="string" />
+			<element name="lastName" type="string" />
+			<element name="age" type="tns:Age" />
+			<element name="salary" type="float" />
+		</sequence>
+	</complexType>
+
 	<complexType name="Address">
 		<sequence>
-			<element name="street" type="string" />
-			<element name="street" type="string" />
+			<element name="streetName" type="string" />
+			<element name="streetNr" type="int" />
+			<element name="zipCode" type="string" />
 		</sequence>
 	</complexType>
-
-	<complexType name="Client">
-		<sequence>
-			<element name="clientType" type="tns:ClientType" />
-			<element name="firstName" type="string" />
-			<element name="lastName" type="string"></element>
-		</sequence>
-	</complexType>
-
-	<simpleType name="ClientType">
-		<restriction base="string">
-			<enumeration value="PERSON" />
-			<enumeration value="COMPANY" />
-		</restriction>
-	</simpleType>
 
 	<simpleType name="Age">
 		<restriction base="int">
