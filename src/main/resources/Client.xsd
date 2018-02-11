@@ -2,14 +2,44 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Client"
 	xmlns:tns="http://www.example.org/Client" elementFormDefault="qualified">
 
-	<element name="client" type="tns:Client" />
+	<complexType name="Appointment">
+		<sequence>
+			<element name="date" type="date"></element>
+			<element name="appartment" type="tns:Appartment" />
+			<element name="teenant" type="tns:Teenant"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Teenant">
+		<sequence>
+			<element name="firstName" type="string" />
+			<element name="lastName" type="string" />
+			<element name="age" type="int" />
+			<element name="salary" type="float" />
+		</sequence>
+	</complexType>
+
+	<complexType name="Appartment">
+		<sequence>
+			<element name="address" type="tns:Address" />
+			<element name="floor" type="int" />
+			<element name="freeFrom" type="date" />
+			<element name="monthlyCosts" type="float" />
+		</sequence>
+	</complexType>
+
+	<complexType name="Address">
+		<sequence>
+			<element name="street" type="string" />
+			<element name="street" type="string" />
+		</sequence>
+	</complexType>
 
 	<complexType name="Client">
 		<sequence>
 			<element name="clientType" type="tns:ClientType" />
 			<element name="firstName" type="string" />
 			<element name="lastName" type="string"></element>
-			<element name="age" type="tns:Age" />
 		</sequence>
 	</complexType>
 
@@ -22,7 +52,7 @@
 
 	<simpleType name="Age">
 		<restriction base="int">
-			<pattern value="[0-9]*" />
+			<pattern value="[0-9]*"></pattern>
 		</restriction>
 	</simpleType>
 
