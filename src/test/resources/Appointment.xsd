@@ -23,6 +23,7 @@
 
 	<complexType name="Teenant">
 		<sequence>
+			<element name="gender" type="tns:Gender" />
 			<element name="firstName" type="string" />
 			<element name="lastName" type="string" />
 			<element name="age" type="tns:Age" />
@@ -41,6 +42,13 @@
 	<simpleType name="Age">
 		<restriction base="int">
 			<pattern value="[0-9]*"></pattern>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="Gender">
+		<restriction base="string">
+			<enumeration value="M"></enumeration>
+			<enumeration value="F"></enumeration>
 		</restriction>
 	</simpleType>
 

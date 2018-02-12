@@ -14,6 +14,7 @@
 		<tns:monthlyCosts>1430.22</tns:monthlyCosts>
 	</tns:appartment>
 	<tns:teenant>
+		<tns:gender>M</tns:gender>
 		<tns:firstName>Zdzislaw</tns:firstName>
 		<tns:lastName>Kowalski</tns:lastName>
 		<tns:age>34</tns:age>
