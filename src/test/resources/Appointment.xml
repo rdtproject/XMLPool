@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tns:appointment xmlns:tns="http://www.example.org/Client"
+<tns:appointment xmlns:tns="http://www.example.org/Appointment"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.example.org/Client Appointment.xsd ">
+	xsi:schemaLocation="http://www.example.org/Appointment Appointment.xsd ">
 	<tns:date>2001-01-01</tns:date>
 	<tns:appartment>
 		<tns:address>

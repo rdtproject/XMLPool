@@ -18,7 +18,6 @@ import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
-import org.xml.sax.SAXParseException;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
